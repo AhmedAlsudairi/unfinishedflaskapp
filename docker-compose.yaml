@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  flasekapp:
+    container_name: flaskapp
+    imgae: a7mad1199/flask-app-example
+    build: ./
+    ports:
+    - 5000:5000
