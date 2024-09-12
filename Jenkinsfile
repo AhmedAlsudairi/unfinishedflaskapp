@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy container') {
             steps {
-                sh 'docker run -d -p 5000:5000 --name flaskapp a7mad1199/flask-app-example'
+                sh 'sudo docker run -d -p 5000:5000 --name flaskapp a7mad1199/flask-app-example'
             }
         }
     }
